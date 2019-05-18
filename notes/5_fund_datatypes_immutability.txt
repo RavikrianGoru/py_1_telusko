@@ -1,0 +1,3 @@
+Fundamental Data types: int, float, bool, complex and str.
+            These are immutable data types.
+            Except complex all are object reusable.

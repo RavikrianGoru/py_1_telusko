@@ -6,7 +6,8 @@ Data type: Type concept is available
         float
         bool
         complex
-
+        str
+# int, float, bool, complex and str are fundamental data types.
         list
         set
         tuple
@@ -49,6 +50,14 @@ bool data type: True False internally represented as 1 0
 str data type: single quote is more readable.
         it allows double quotes, triple single/triple double quotes(multi line strings)
 
-
+s = 'ravi'
+    ----------
+      index
+    ----------
+    r   0   -4
+    a   1   -3
+    v   2   -2
+    i   3   -1
+    ----------
 
 

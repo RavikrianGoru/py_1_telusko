@@ -1,0 +1,26 @@
+Type casting:
+    int()     : Convert other type into int
+    float()   : Convert other type into float
+    complex() : Convert other type into complex
+    bool()    : Convert other type into bool
+    str()     : Convert other type into str
+
+1) int(-):  any form of integer values(decimal/bin/hex/oct)
+            decimal form of float
+            bool values
+            str of decimal integer ony allowed
+            complex to int conversion is not possible(TypeError)
+
+2) float(-):decimal form of float
+            any form of integer values(decimal/bin/hex/oct)
+            bool values
+            str of decimal integer/float only allowed
+            complex to int conversion is not possible(TypeError)
+
+3) bool(-) : except 0, 0.0 & 0+0j all will return True.
+
+4) complex(-) or complex(-,-): real part and imaginary part
+
+5) str(-) : Any conversion is accepted.
+
+
