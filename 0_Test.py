@@ -1,28 +1,3 @@
-# 1) Simple: Every one can understand the following code.
-from numpy.distutils.system_info import openblas_clapack_info
-
-a = 10
-b = 20
-c = 30 if a > b else 40
-print(c)
-
-# Read data from file
-# print(open('Note.txt').read())
-
-# 2) Concise code: Write hellow world program in c, Java......
-print('Hellow World')
-
-# 3) 6 digits OTP
-import random as r
-print(r.randint(0,9),r.randint(0,9),r.randint(0,9),r.randint(0,9),r.randint(0,9),r.randint(0,9), sep='')
-
-# identifiers
-    # 2a = 20 SyntaxError
-    # if = 20 SyntaxError
-
-# list all keywords
-import keyword
-print(len(keyword.kwlist),keyword.kwlist)
 
 # Data types
 #int z = 20 SyntaxError
@@ -82,15 +57,16 @@ x = 10+20J
 print(x, type(x), x.real, x.imag)
 
 a = 0b1011 + 20j
-print(a, type(x), x.real, x.imag)
+print(a, type(a), a.real, a.imag)
 b = 0o12 + 20j
-print(b, type(x), x.real, x.imag)
+print(b, type(b), b.real, b.imag)
 c = 0x12 + 20j
-print(c, type(x), x.real, x.imag)
+print(c, type(c), c.real, c.imag)
 d = 10.5 + 20.7j
-print(d, type(x), x.real, x.imag)
+print(d, type(d), d.real, d.imag)
 
 print(a + b)
 print(a - b)
 print(a * b)
 print(a / b)
+print(a // b)

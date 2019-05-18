@@ -1,0 +1,49 @@
+Data type: Type concept is available
+    Dynamically typed: no need to declare type explicitly.
+    Every thing in python is Object
+    Inbuilt data types:
+        int
+        float
+        bool
+        complex
+
+        list
+        set
+        tuple
+
+        frozenset
+        dict
+        bytes
+        bytearray
+        range
+        None
+
+Common used functions id(), type() print()
+
+Integer values:
+    Decimal form or Base 10: (0-9)
+    Binary form or Base 2:(0 and 1): starts with 0b or 0B
+    Octal form or Base 8:(0-7): starts with 0O or 0o
+    Hexa decimal form or Base 16:(0-9,a-f,A-F): start with 0x or 0X
+
+Base conversion functions:
+    bin()
+    oct()
+    hex()
+
+Floating values:
+    Only decimal form 123.456
+    exponential from 123456e-3, 12e3, 123456E-3, 12E3
+
+Complex data types:
+    a+bj here a is real part , b is imaginary part and j/J value is squar root of -1 or j^2 = -1
+
+    a  real part can be represented in binary/octal/hexa form
+    b imaginary part can be represented in only decimal form
+    we can perform arithmetic operations with complex numbers.
+
+
+
+
+
+

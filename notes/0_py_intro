@@ -1,0 +1,37 @@
+Python is a general purpose high level programming language.
+    Guido van Rossum - 1989,(20th Feb 1991)
+    + OpenSource
+    + Simple & Concise Coding
+    + Rich library
+    + AI, ML,IoT, DL, DS, NN....
+
+High level = Programmer friendly language not machine level language.
+Dynamically typed programming language: Python, JavaScript....
+Python word taken from a commedy show name.
+
+Python:
+    OOP language feature from C++
+    Functional programming features from C
+    Scripting features from Perl, Shell
+    Modular programming features from Modula3
+    + Desktop Apps
+    + Web apps
+    + Network Apps(Chatting)
+    + Games
+    + Data Analysis
+    + ML, DL, IoT, NN, AI....etc
+
+Google, Facebook, Yahoo, Nasa, DropBox, Netflix...... using python
+
+Customized python is available for different programming languages.
+    cpython for C support
+    Jython for java support
+    IRON python for C# .net
+    Anakonda Python for BigData.
+    Ruby python for Ruby support
+    stackless for concurrency
+    pypy python for speed
+
+Python 2.x vs 3.x:
+    3.x is not extension of 2.x
+    3.x is completely independent language to add new features but no backward compatibility.
