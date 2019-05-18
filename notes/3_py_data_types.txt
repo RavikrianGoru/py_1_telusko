@@ -35,14 +35,19 @@ Floating values:
     Only decimal form 123.456
     exponential from 123456e-3, 12e3, 123456E-3, 12E3
 
+
 Complex data types:
     a+bj here a is real part , b is imaginary part and j/J value is squar root of -1 or j^2 = -1
 
-    a  real part can be represented in binary/octal/hexa form
-    b imaginary part can be represented in only decimal form
+    a  real part can be represented in deciaml/binary/octal/hexa form of integer and decimal form of float
+    b imaginary part can be represented in only decimal form of integer and decimal form of float
     we can perform arithmetic operations with complex numbers.
 
 
+bool data type: True False internally represented as 1 0
+
+str data type: single quote is more readable.
+        it allows double quotes, triple single/triple double quotes(multi line strings)
 
 
 
