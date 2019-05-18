@@ -1,3 +1,16 @@
 Fundamental Data types: int, float, bool, complex and str.
-            These are immutable data types.
-            Except complex all are object reusable.
+    All Fundamental data types are immutable data types.
+    Except complex all are object reusable.(Doubt) [Compare in IDLE adn PyCharm]
+
+Immutable Objects:  Once we create an object we can not perform any changes on that object.
+    We are trying to perform any changes with those changes a new object will be created.
+    + Memory utilization
+    + Performance improved
+
+PVM-Python virtual memory: if an object is required to create, PVM will check if any object is already available with required content.
+PVM will not create it will reuse the existing object.
+Object create is costly operation then searching operation.
+
+
+Python Consle and IDEl are REPL tools: Read Eval Print and Loop.
+These tools are not standard tools.
