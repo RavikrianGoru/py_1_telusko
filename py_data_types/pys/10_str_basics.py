@@ -10,16 +10,17 @@ print(s.index('Go',3))
 
 # Slice operator s = 'Goru RaviKiran Goru'
 # s[begin:end] end is exclusion
-print(s[0:len(s)])
-print(s[0:4])
-print(s[0:])
-print(s[:len(s)])
-print(s[:])
+print('s[0:len(s)] ', s[0:len(s)])
+print('s[0:4] ', s[0:4])
+print('s[0:] ', s[0:])
+print('s[:len(s)] ', s[:len(s)])
+print('s[:] ', s[:])
 
-print(s[5:1000])
-print(s[10:3]) #nothing prints
-print(s[10:3:-1]) #nothing prints
+print('s[5:1000] ', s[5:1000])
+print('s[10:3] ', s[10:3]) #nothing prints
+print('s[10:3:-1] ', s[10:3:-1]) #nothing prints
 
+print("*************", s[0:-1])
 
 # Str arthmetic oerations
 s = 'ravi' + 'kiran'

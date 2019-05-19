@@ -1,5 +1,5 @@
 Python features:
-    1) Simple & Eacy to learn (35 reserved words)
+    1) Simple & Easy to learn (35 reserved words)
     2) Freeware & Open source
     3) High-level
     4) Platform independent(PVM) like JVM in java. PVM is platform dependent
@@ -18,4 +18,3 @@ Limitation:
     - Not to E2E End to End Apps(Enterprise Apps: Banking, Telecom apps)
     - Performance is low as it is interpreted in nature
       JIT concept pypy (python for speed)is added in python virtual machine but still not up to the mark.
-

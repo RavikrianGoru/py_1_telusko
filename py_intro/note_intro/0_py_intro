@@ -10,12 +10,14 @@ Dynamically typed programming language: Python, JavaScript....
 Python word taken from a commedy show name.
 
 Python:
+    Most of syntax from C and ABC language
     OOP language feature from C++
     Functional programming features from C
     Scripting features from Perl, Shell
-    Modular programming features from Modula3
+    Modular programming features from Modula-3
     + Desktop Apps
-    + Web apps
+    + Web apps---> Django
+    + Database applications
     + Network Apps(Chatting)
     + Games
     + Data Analysis

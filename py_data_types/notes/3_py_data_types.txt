@@ -1,6 +1,7 @@
 Data type: Type concept is available
     Dynamically typed: no need to declare type explicitly.
     Every thing in python is Object
+    not range, min, max value and size concept is not there for data types as all are objects.
     Inbuilt data types:
         int
         float

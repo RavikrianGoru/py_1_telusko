@@ -1,6 +1,6 @@
 s = 'ravi'
-print(s[0],s[1],s[2],s[3])
-print(s[-1],s[-2],s[-3],s[-4])
+print(s[0], s[1], s[2], s[3])
+print(s[-1], s[-2], s[-3], s[-4])
 
 #s[4] or s[-5] ---> IndexError: string index out od range
 

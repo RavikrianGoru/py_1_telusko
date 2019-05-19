@@ -14,3 +14,5 @@ print(l2)
 l2[0] = 100
 
 print(l2)
+print('l2[1:3] : ', l2[1:3])
+print('listObj * 2 :', l2 * 2)

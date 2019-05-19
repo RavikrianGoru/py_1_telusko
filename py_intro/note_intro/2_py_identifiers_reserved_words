@@ -1,14 +1,14 @@
-Identifiers: Rules to create identifiers
+Identifiers: Rules to create identifiers- variables, classes, methods,.....etc.
     1) a-z A-Z 0-9 and _ allowed
     2) should not start with digit
     3) case sensitive
     4) No length limit but not recommended to use large length
-    5) Should not used reserved word as identifiers
+    5) Should not used reserved/keywords word as identifiers
 
     x normal variable
-    _x protected variable
-    __x private variables
-    __x__ magic variable language level
+    _x protected variable(private)
+    __x private variables(strongly private)
+    __x__ magic variable language level: (language specific identifiers)
 
 Reserved words: python-35, java-53
     'import', 'as',
