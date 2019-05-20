@@ -1,20 +1,36 @@
-we have designed our program around functions i.e.blocks of statements which manipulate data.
-This is called the procedure-oriented way of programming.
+Procedure-oriented programing:
+-----------------------------
+    Module with functions(blocks of statements which manipulate data)
 
-There is another way of organizing your program which is to combine data and functionality and wrap it inside something called an object.
-This is called the object oriented programming paradigm.
+Object oriented programming:
+---------------------------
+Combination of data(fields) and functionality(methods) into object type programing
 
 Classes and objects are the two main aspects of object oriented programming.
 A class creates a new type where objects are instances of the class.
 
-Class-----> Object-1, Object-2...... Object-n
+Field: variables of Object/Class
+Method: functions of Class
+Attributes: Collectively, the fields and methods can be referred to as the attributes of that class.
 
-variables of Object/Class : Fields
-functions of Class: Methods
-Collectively, the fields and methods can be referred to as the attributes of that class.
+A class is created using the 'class' keyword.
 
-instance variables:
-class variables:
 
-A class is created using the class keyword.
+Class method must have first param(self) no need to provide value for it. Python will provide it.
+
+The self : reference of current object itself.
+    We can give any name for this parameter. Recommended to use name 'self'.
+
+
+The __init__ method:
+    The __init__ method is run as soon as an object of a class is instantiated (i.e. created).
+    The method is useful to do any initialization (i.e. passing initial values to your object) you
+    want to do with your object.
+
+Class and Object variables:
+
+
+
+
+
 
