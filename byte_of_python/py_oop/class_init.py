@@ -1,6 +1,10 @@
 class Person:
     def __init__(self, name):# we can give any name instead of self but recommended to use self.
-        self.name =name
+        self.name = name
+
+#    def __init__(self, name, age):# we can give any name instead of self but recommended to use self.
+#        self.name = name
+#        self.age = age
 
     def say_hi(self):
         print(f'{self.name} : Hi all')
@@ -12,3 +16,8 @@ class Person:
 p = Person('Ravi')
 p.say_hi()
 p.say_bye()
+
+#p1 = Person('Ravi', 32)
+#p1.say_hi()
+#p1.say_bye()
+

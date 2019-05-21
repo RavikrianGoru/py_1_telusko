@@ -27,7 +27,44 @@ The __init__ method:
     The method is useful to do any initialization (i.e. passing initial values to your object) you
     want to do with your object.
 
+    Is there constructor overloading? (doubt:no)
+
 Class and Object variables:
+
+    The data part, i.e. fields, are nothing but ordinary variables that are bound to the namespaces of the classes and objects.
+    This means that these names are valid within the context of these classes and objects only.
+    That's why they are called name spaces.
+
+Class variables are shared - they can be accessed by all instances of that class.
+Object variables are owned by each individual object/instance of the class.
+
+All class members are public. One exception: If you use data members with names using the
+double underscore prefix such as __privatevar , Python uses name-mangling to effectively
+make it a private variable.
+
+Thus, the convention followed is that any variable that is to be used only within the class or
+object should begin with an underscore and all other names are public and can be used by
+other classes/objects.
+
+Remember that this is only a convention and is not enforced by Python (except for the double underscore prefix).
+
+docstrings of class cab be access by ClassName.__doc__
+    Ex: print(f'Show doc strings for class {Robot.__doc__}')
+docstrings of method cab be access by ClassName.methodName.__doc__
+    Ex: print(f'Show doc strings for method {Robot.die.__doc__}')
+
+
+Inheritance: one of the ways of reuse of code. a type and subtype relationship between classes.
+
+Polymorphism: where a sub-type can be substituted in any situation
+    where a parent type is expected, i.e. the object can be treated as an instance of the parent class.
+
+Python does not automatically call the constructor of the base class if we have constructor/__init__  in child class
+we have to class __init__ in child __init__ explicitly.
+
+In contrast, if we have not defined an __init__ method in a subclass, Python will call the constructor of the base class automatically.
+
+A note on terminology - if more than one class is listed in the inheritance tuple, then it is called multiple inheritance.
 
 
 
