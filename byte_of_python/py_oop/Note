@@ -67,7 +67,11 @@ In contrast, if we have not defined an __init__ method in a subclass, Python wil
 A note on terminology - if more than one class is listed in the inheritance tuple, then it is called multiple inheritance.
 
 
-
+Input/Output:
+    input(-)
+    print(-)
+    file operations
+    
 
 
 

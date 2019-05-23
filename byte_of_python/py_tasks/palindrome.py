@@ -21,7 +21,7 @@ def is_palindrome_v2(text):
 
 def removePunctuations(text, forbidden):
     for each in forbidden:
-        text = text.replace(each,'')
+        text = text.replace(each, '')
     text = text.lower()
     return text
 
