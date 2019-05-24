@@ -1,0 +1,1136 @@
+Python (Guido Van Rossum 1989(20th Feb 1991)
+
+ 1) Python Introduction
+   Python: Fastest growing general purpose high language for
+        Machine learning
+        GUI
+        sw development
+        web development
+   Python is interpreted, Object oriented, high level programming language.
+   Java- 1995
+   Python- 1989, It came into picture as the advancement of ML and AI, In this field Research scientist dont want to spend more time to learn Programming language.
+   Reddit, Google, Youtube, DropBox using Python.
+   Anyone can learn python.
+
+
+2) Python Installation:
+    Download & install python latest s/w from official website.
+    Verify:
+            Windows -> type "Python" -> It will show Python the following...
+                3.7(32-bit) is Interpreter
+                IDLE
+    Download and install Pytharm IDE from official site.
+
+
+3) Use Interpreter open IDLE:
+===============Arithmetic Operations=========
+>>> 2 + 4
+6
+>>> 9 - 4
+5
+>>> 2 * 4
+8
+>>> 7 / 2
+3.5
+>>> 7 // 2                                                      division output integer part
+3
+>>> 7 % 2
+1
+>>> 2 ** 3                                                      power operation
+8
+>>> 2 ** 4
+16
+>>> pow(2,4)                                                    pow function/method
+16
+>>> 8 + 2 * 3
+14
+>>> (8 + 2) * 3
+30
+
+==============Print Data======================
+>>> 'ravi'
+'ravi'
+>>> "ravi"
+'ravi'
+>>> print('ravi')
+ravi
+>>> print("ravi")
+ravi
+>>> print("'ravi'")
+'ravi'
+>>> print('"ravi"')
+"ravi"
+>>> print(5 * 'ravi')
+raviraviraviraviravi
+>>> 5 * 'ravi'
+'raviraviraviraviravi'
+>>> print("ravi's \"red\" pen")
+ravi's "red" pen
+>>> print("d:\ravi\new")
+d:
+avi
+ew
+>>> print('d:\ravi\new')
+d:
+avi
+ew
+>>> print('d:\ravi\\new')
+d:
+avi\new
+>>> print(r'd:\ravi\new')
+d:\ravi\new
+
+
+4) variable: is container to store data and points to memory location
+   No need to define type of variable.
+
+>>> x = 2
+>>> y = 3
+>>> x
+2
+>>> x = 10
+>>> x
+10
+>>> x + 20
+30
+>>> x + y
+13
+>>> _ * 2                                               _ is output of previous operation
+26
+
+String is immutable can not be changed.
+
+>>> name = 'youtube'
+>>> name
+'youtube'
+>>> name + "rocks"
+'youtuberocks'
+>>> name
+'youtube'
+>>> name[0]
+'y'
+>>> name[6]
+'e'
+>>> name[-1]
+'e'
+>>> name[0:2]
+'yo'
+>>> name[1:6]
+'outub'
+>>> name[1:]
+'outube'
+>>> name[:4]
+'yout'
+>>> name[3:10]
+'tube'
+>>> name[-3:10]
+'ube'
+>>> name
+'youtube'
+>>> name[0]='Y'
+Traceback (most recent call last):
+  File "<pyshell#86>", line 1, in <module>
+    name[0]='Y'
+TypeError: 'str' object does not support item assignment
+
+>>> len(name)                                       len function/method
+7
+
+5) List in python : [] mutable : can be changes, Allows duplicate items.
+
+============================List []==============================
+>>> nums = [ 12, 34, 10, 2, 5, 3, 10]
+>>> nums
+[12, 34, 10, 2, 5, 3, 10]
+>>> nums[0]
+12
+>>> nums[6]
+10
+>>> nums[7]
+Traceback (most recent call last):
+  File "<pyshell#103>", line 1, in <module>
+    nums[7]
+IndexError: list index out of range
+>>> nums[-1]
+10
+>>> nums[-2]
+3
+>>> nums[2:6]
+[10, 2, 5, 3]
+>>> nums[2:]
+[10, 2, 5, 3, 10]
+>>> nums[:]
+[12, 34, 10, 2, 5, 3, 10]
+>>> nums[-3:]
+[5, 3, 10]
+
+
+>>> names = ['ravi', 'kiran', 'goru']
+>>> names
+['ravi', 'kiran', 'goru']
+>>> len(names)
+3
+
+>>> nums
+[12, 34, 10, 2, 5, 3, 10, 45, 11]
+>>> print(nums)
+[12, 34, 10, 2, 5, 3, 10, 45, 11]
+>>> nums.append(12)
+>>> nums
+[12, 34, 10, 2, 5, 3, 10, 45, 11, 12]
+>>> nums.copy()
+[12, 34, 10, 2, 5, 3, 10, 45, 11, 12]
+>>> nums.count(12)
+2
+>>> nums.extend(13)
+Traceback (most recent call last):
+  File "<pyshell#172>", line 1, in <module>
+    nums.extend(13)
+TypeError: 'int' object is not iterable
+>>> nums.extend([12,13])
+>>> nums
+[12, 34, 10, 2, 5, 3, 10, 45, 11, 12, 12, 13]
+>>> nums.index(12)
+0
+>>> nums.index(13)
+11
+>>> nums.insert(0,0)
+>>> nums
+[0, 12, 34, 10, 2, 5, 3, 10, 45, 11, 12, 12, 13]
+>>> nums.insert(10)
+Traceback (most recent call last):
+  File "<pyshell#179>", line 1, in <module>
+    nums.insert(10)
+TypeError: insert() takes exactly 2 arguments (1 given)
+>>> nums.pop()
+13
+>>> nums
+[0, 12, 34, 10, 2, 5, 3, 10, 45, 11, 12, 12]
+>>> nums.pop()
+12
+>>> nums
+[0, 12, 34, 10, 2, 5, 3, 10, 45, 11, 12]
+>>> nums.remove(12)
+>>> nums
+[0, 34, 10, 2, 5, 3, 10, 45, 11, 12]
+>>> nums.remove(12)
+>>> nums
+[0, 34, 10, 2, 5, 3, 10, 45, 11]
+>>> nums.reverse()
+>>> nums
+[11, 45, 10, 3, 5, 2, 10, 34, 0]
+>>> nums.reverse()
+>>> nums
+[0, 34, 10, 2, 5, 3, 10, 45, 11]
+>>> nums.sort()
+>>> nums
+[0, 2, 3, 5, 10, 10, 11, 34, 45]
+>>> nums.pop(5)
+10
+>>> nums
+[0, 2, 3, 5, 10, 11, 34, 45]
+>>> del nums[5:]
+>>> nums
+[0, 2, 3, 5, 10]
+>>> min(nums)
+0
+>>> max(nums)
+10
+>>> sum(nums)
+20
+>>> nums[0] = 1000
+>>> nums
+[1000, 2, 3, 5, 10]
+
+6) Tuple is immutable= can not change the values, allows duplicate  --- (), Iteration is faster than list.
+   Set is mutable and can not allow duplicate and no sequence, No indexing. ----{} it uses concept called hash. performance is good for fetching.
+
+======================================Tuple ()=================================
+>>> ids =(13,23,13,25,5,0,245)
+>>> ids
+(13, 23, 13, 25, 5, 0, 245)
+>>> ids.count(13)
+2
+>>> ids.index(13)
+0
+>>> ids.index(130)
+Traceback (most recent call last):
+  File "<pyshell#217>", line 1, in <module>
+    ids.index(130)
+ValueError: tuple.index(x): x not in tuple
+>>> ids =()
+>>> ids
+()
+>>> ids = nums
+>>> ids
+[1000, 2, 3, 5, 10]
+>>> ids = tuple(nums)
+>>> ids
+(1000, 2, 3, 5, 10)
+>>> ids[0] = 100
+Traceback (most recent call last):
+  File "<pyshell#224>", line 1, in <module>
+    ids[0] = 100
+TypeError: 'tuple' object does not support item assignment
+
+=====================================Set {}===============================
+>>> s = { 23, 12 ,45, 28 ,45, 298, 2, 4, 5}
+>>> s
+{2, 4, 5, 298, 12, 45, 23, 28}
+>>> s.add(10)
+>>> s
+{2, 4, 5, 298, 10, 12, 45, 23, 28}
+>>> s.add(10)
+>>> s
+{2, 4, 5, 298, 10, 12, 45, 23, 28}
+
+>>> s1 = {1,3,5,7,9,2}
+>>> s2 = {2,4,6,8,10}
+>>> s1
+{1, 2, 3, 5, 7, 9}
+>>> s2
+{2, 4, 6, 8, 10}
+>>> s1.difference(s2)
+{1, 3, 5, 7, 9}
+
+>>> s2.difference(s1)
+{8, 10, 4, 6}
+>>> s1.difference(s1)
+set()
+>>> s1
+{1, 2, 3, 5, 7, 9}
+>>> s2
+{2, 4, 6, 8, 10}
+>>> s1.intersection(s2)
+{2}
+>>> s1.isdisjoint(s2)
+False
+>>> s1.issubset(s2)
+False
+>>> s1.issuperset(s2)
+False
+>>> s1.issuperset(s1)
+True
+>>> s1.pop()
+1
+>>> s1
+{2, 3, 5, 7, 9}
+>>> s1.remove(9)
+>>> s1
+{2, 3, 5, 7}
+>>> s1.symmetric_difference(s2)
+{3, 4, 5, 6, 7, 8, 10}
+>>> s1.symmetric_difference(s1)
+set()
+>>> s1.symmetric_difference_update(s2)
+>>> s1
+{3, 4, 5, 6, 7, 8, 10}
+>>> s2
+{2, 4, 6, 8, 10}
+>>> s1.union(s2)
+{2, 3, 4, 5, 6, 7, 8, 10}
+>>> s1
+{3, 4, 5, 6, 7, 8, 10}
+>>> s2
+{2, 4, 6, 8, 10}
+>>> s1.update(s2)
+>>> s1
+{3, 4, 5, 6, 7, 8, 2, 10}
+
+7) Use command prompt:
+    Open cmd prompt and type "python" it will not be recognized. (Need to set path, environment)
+    Environment variable:
+    ====================
+    Set path for python: add the following entries in path
+    C:\Users\ravikiran.goru\AppData\Local\Programs\Python\Python37-32
+    C:\Users\ravikiran.goru\AppData\Local\Programs\Python\Python37-32\Scripts
+
+    Reopen cmd prompt
+
+ ===================help cmd in python=======================
+
+ help()
+    modules
+    keywords
+    symbols
+    topics
+ If you know the topics name then
+ help('LISTS')
+
+ * Read about topics while you are working.
+
+8) Sublime is light weight IDE.
+    Download & install sublime.
+ ===========Variables=============
+ Functions:
+    id(variableName): Address of variable, Multiple variables having the same data will have same address.
+                      So, Python is memory efficient.
+>>> a =10
+>>> b=a
+>>> c = 10
+>>> id(a)
+1523046720
+>>> id(b)
+1523046720
+>>> id(c)
+1523046720
+>>> id(10)
+1523046720
+
+
+  * Python, We dont have constant but we can specify our intention by declaring variable in capital letters.
+  type(variableName): will give type of variables.
+>>> type(a)
+<class 'int'>
+>>> type(10.5)
+<class 'float'>
+
+
+9) Data types: We dont have char type in python.
+    None
+    Numetic
+        int
+        float
+        complex
+        bool
+    Sequence
+        List []
+        Touble ()
+        Set {}
+        String - str
+        Range
+    Dictionary {key1:value1, key2:value2.....}
+
+>>> a = None
+>>> type(a)
+<class 'NoneType'>
+>>> a = 10
+>>> type(a)
+<class 'int'>
+>>> a = 10.6
+>>> type(a)
+<class 'float'>
+>>> a = 10
+>>> num = a + 5j
+>>> num
+(10+5j)
+>>> type(1)
+<class 'int'>
+>>> type(True)
+<class 'bool'>
+
+Type Casting:
+>>> float(5)
+5.0
+>>> int(19.5)
+19
+>>> a
+True
+>>> b = False
+>>> b
+False
+>>> bool(1)
+True
+>>> bool(0)
+False
+>>> boole(9)
+Traceback (most recent call last):
+  File "<pyshell#354>", line 1, in <module>
+    boole(9)
+NameError: name 'boole' is not defined
+>>> list(range(10))
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+>>> list(range(0,10,3))
+[0, 3, 6, 9]
+
+>>> d = {'E001':'Ravi', 'E002':'Kiran','E003':'Goru','E001':'RavI'}
+>>> d
+{'E001': 'RavI', 'E002': 'Kiran', 'E003': 'Goru'}
+>>> d1 =d.copy()
+>>> d1
+{'E001': 'RavI', 'E002': 'Kiran', 'E003': 'Goru'}
+>>> d1.clear()
+>>> d1
+{}
+>>> d.get('E001')
+'RavI'
+>>> d.items()
+dict_items([('E001', 'RavI'), ('E002', 'Kiran'), ('E003', 'Goru')])
+>>> d.keys()
+dict_keys(['E001', 'E002', 'E003'])
+>>> d.pop()
+Traceback (most recent call last):
+  File "<pyshell#9>", line 1, in <module>
+    d.pop()
+TypeError: pop expected at least 1 arguments, got 0
+>>> d.pop('E001')
+'RavI'
+>>> d
+{'E002': 'Kiran', 'E003': 'Goru'}
+>>> d.pop('E001')
+Traceback (most recent call last):
+  File "<pyshell#12>", line 1, in <module>
+    d.pop('E001')
+KeyError: 'E001'
+>>> d.popitem()
+('E003', 'Goru')
+>>> d
+{'E002': 'Kiran'}
+>>> d.values()
+dict_values(['Kiran'])
+>>> d.update()
+>>> d
+{'E002': 'Kiran'}
+
+10) Operators in python:
+
+Arithmetic
+==========
+>>> x = 2
+>>> y = 3
+>>> x + y
+5
+>>> x - y
+-1
+>>> x * y
+6
+>>> x / y
+0.6666666666666666
+>>> x // y
+0
+>>> x ** y
+8
+
+Assignment
+==========
+>>> x = x + 2
+>>> x
+4
+>>> x =+2
+>>> x
+2
+>>> x +=2
+>>> x
+4
+>>> x *=3
+>>> x
+12
+>>> x -=2
+>>> x
+10
+>>> a,b = 5,6
+>>> a
+5
+>>> b
+6
+
+Relational
+==========
+>>> a
+5
+>>> b
+6
+>>> a < b
+True
+>>> a > b
+False
+>>> a <= b
+True
+>>> a >= b
+False
+>>> a == b
+False
+>>> a != b
+True
+
+Logical
+=======
+    and, or, not
+
+>>> a
+5
+>>> b
+6
+>>> a < 6 and b > 5
+True
+>>> a < 6 or b > 5
+True
+>>> x = True
+>>> not x
+False
+>>> x
+True
+
+Unary
+=====
+>>> a
+5
+>>> -a
+-5
+>>> a
+5
+>>> ~a
+-6
+>>> b = -7
+>>> b
+-7
+>>> ~b
+6
+
+11) Number system and conversions
+    digital 0-9
+    binary 0-1
+    octal 0-7
+    hexa decimal 0-9 a-f
+
+>>> bin(15)
+'0b1111'
+>>> bin(0b1111)
+'0b1111'
+>>> oct(15)
+'0o17'
+>>> hex(25)
+'0x19'
+>>> 0x23
+35
+>>> 0b11101001
+233
+
+Swap two numbers:
+================
+Way-1 :
+=====
+>>> a = 5       #101   requires 3 bits
+>>> b = 6       #101   requires 3 bits
+>>> a = a + b   #1011  requires 4 bits used
+>>> b = a - b
+>>> a = a - b
+>>> print(a)
+6
+>>> print(b)
+5
+
+Way-2 :
+=====
+Memory optimization : it uses same number of bits
+ _________________________________________
+| a         |   15   |  1   1   1   1     |
+| b         |   5    |  0   1   0   1     |
+|-----------|--------|--------------------|
+| a = a ^ b |   10   |  1   0   1   0     |
+| b = a ^ b |   15   |  1   1   1   1     |
+| a = a ^ b |   5    |  0   1   0   1     |
+|___________|________|____________________|
+>>> a = 20
+>>> b = 25
+>>> a = a ^ b
+>>> b = a ^ b
+>>> a = a ^ b
+>>> print(a)
+25
+>>> print(b)
+20
+
+Way-3 :
+=====
+Applicable to python only. Internally uses stack. ROT_TWO()
+>>> a = 5
+>>> b = 10
+>>> a,b = b,a
+>>> print(a)
+10
+>>> print(b)
+5
+>>>
+>>> a,b = 100, 50
+>>> print(a)
+100
+>>> print(b)
+50
+
+
+12)
+Access previous comman in IDEL: Options -> Configure IDLE -> keys -> history(key-up)->get Key---> ^
+13) BitWise Operator:
+
+    Complement (~) - tilde: convert the number into binary → Do 1’s complement then add binary 1
+                            ( +1 and change sign)
+    And (&): convert the numbers into binary → Do & operation→ 1 & 1=1 , 1 & 0=0, 0 & 1=0, 0 & 0=0
+    Or (|):convert the numbers into binary → Do | operation→ 1 & 1=1 , 1 & 0=1, 0 & 1=1, 0 & 0=0
+    XOR(^):convert the numbers into binary → Do ^ operation→ 1 & 1=0 , 1 & 0=1, 0 & 1=1, 0 & 0=0
+    Left shift(a<<n): convert the number into binary shift to left n bits
+    Right shift(a>>n):convert the number into binary shift to right n bits
+
+>>> bin(10)
+'0b1010'
+>>> 10<<2
+40
+>>> 10>>2
+2
+
+14) Math functions:
+    ->Need to "import  <module>" -> math.<Ctrl+space> will show available functions.
+    -> alias: "import <module> as m"
+    -> import specific functions: from <module> import */<functions separated by ,>
+
+>>> print(sqrt(10))
+Traceback (most recent call last):
+  File "<pyshell#0>", line 1, in <module>
+    print(sqrt(10))
+NameError: name 'sqrt' is not defined
+>>> print(math.sqrt(10))
+Traceback (most recent call last):
+  File "<pyshell#1>", line 1, in <module>
+    print(math.sqrt(10))
+NameError: name 'math' is not defined
+>>> import math
+>>> print(math.sqrt(10))
+3.1622776601683795
+>>> print(math.pow(3,2))
+9.0
+>>> print(math.pi)
+3.141592653589793
+>>> print(math.e)
+2.718281828459045
+
+>>> import math as m
+>>> print(m.pi)
+3.141592653589793
+
+>>> from math import sqrt,pow
+>>> sqrt(10)
+3.1622776601683795
+>>> pow(3,2)
+9.0
+
+15) Working with PyCharm, Save file, run debug....
+    Save file with 'py' extension run python <fileName>.py cmd in command prompt.
+
+
+16) input(): will return str type. Need to typecast.
+    int(),float(),bool(),eval()....
+    How to read cmd line arguments?
+    argv  is available in sys module.
+    "import sys"
+
+    >python myCode.py 10 20
+    file name -----> argv[0]
+    1st arg -----> sys.argv[1]
+    2nd arg -----> sys.argv[2]
+
+import sys
+print(sys.argv)
+print(type(sys.argv))
+print(int(sys.argv[1]) + int(sys.argv[2]))
+
+17) if, if else, if elif else adn nested if:
+    ref: 2_*.py
+
+18) While Loops:
+
+    <initializedVariable>
+    while <terminationCondition>
+        <statements>
+        <increment/decrement>
+
+19) For Loops: cab be used do list[],tuple(),set{}, str, range(...)
+
+    for <tempoVariable> in <collectionsObject>
+        <statements>
+
+20) 'break' , 'continue' and 'pass' key words
+    break can be used for break inner loop based on condition.
+    continue can be used for skip statements based on condition.
+    pass can be used as we dont have empty block in python.
+
+21) for else:
+
+    case-1: print 1st multiple of 5 from collection. if not item is mul of 5. print Not found.
+
+22) find given number is prime/not.
+    Sample Java code:
+
+    boole isPrime(int n)
+    {
+     if(n<=1)
+        return false:
+     if(n<=3)
+        return true;
+     if(n%2==0 || n%3==0)
+        return false;
+
+     for(int i=5;i*i<=n;i=i+6)
+     {
+        if(n%i ==0 || n%(i+2)==0)
+            return false;
+     }
+    return true;
+    }
+
+23) Arrays: Stores Homogeneous data. No static size for array in python.
+    Need to specify type. Typecodes- b,B,u,h,H,i,I,l,L,f,d....
+    import array
+    a = array.array(<typecode>, [<itemsSeparatedby,>]
+    Ex:
+    a = array('i',[1,2,4,6,7])
+
+24) arrays: 1D array, 2D array.... etc
+    Normal array down not support multi dimension arrays: Need to use numpy lib
+
+    1) install numpy through pip
+        open cmd
+        pip3
+        install numpy
+    2) Install numpy in PyCharm
+        File->Settings->Project: <name>->Project Interpreter-> (+) numpy
+
+    ary = numpy.array([1,2,4,6])
+    ary = numpy.array([1,2,4,6], int)
+    print(ary)
+
+25) Ways to create array in numpy : 6 ways
+
+    1) array()
+    2) linspace()
+    3) logspace()
+    4) arange()
+    5) zeros()
+    6) ones()
+
+    * 5 and 6 are efficient way to create arrays.
+26) Copy arrays: =, shallow:view() and deep:copy() these functions are available in numpy
+
+27) matrix operations:
+    adding two matrices
+    multiplication of two matrices.
+    Manual mut=ltiplication of two arrays.
+
+28) Functions:
+    def functionName(args by ,):
+        statements
+        return vars by ,
+29) pass by value vs pass by reference:
+
+30) Types of argument in functions:
+    a) Actual ----- add(5,4)
+    b) Formal ----- def add(x,y):
+
+    # Arguments: 1 Position, 2 Keyword, 3 Default and 4 Variable length
+    ref 18_*.py
+
+# Formal arguments
+def person(name, age=18):
+    print("Name", name)
+    print("Age", age)
+
+
+def sum(a, *b):
+    print(a)
+    print(b)
+    c = a;
+    for i in b:
+        c +=i
+    print(c)
+
+
+# Position arguments: have to pass values in order/position
+person("Ravi",28)
+
+# Keyword arguments: have to pass values with keyword
+person(age=28, name="Ravi")
+person(name="Ravi", age=28)
+
+# Default arguments: have to pass values else it takes default values
+person("RaviG")
+
+# Variable arguments: have to pass values with any size
+sum(1,2,3,4,5)
+
+
+31) keyworded variable length arguments
+
+def person(name, **data):
+    print(name)
+    print(data)
+
+    for i,j in data.items():
+        print(i,j)
+
+person('Ravi',age=28,city='Guntur',phone=9898565610)
+
+32) local variables and global variable
+    Scope: local and global variables
+    how to differentiate local and global variables:
+        global a
+    Can we have local and global variables in a function? yes, access and assign to some other variables.
+        by using globals() we can access all global variables.
+        x = globals()['a']
+
+33) print data in format:
+    print("Event cout : {} Odd count : {}".format(5,10))
+
+34) Factorial of a number
+35) Recursion: A function calls itself. Python default 1000 times recursion allowed.
+    sys.getrecursionlimit()
+    sys.setrecursionlimit(100)
+36) Factorial  by using recursion.
+37) Anonymous functions or Lambda
+    Functions are objects in python.
+    Ex:
+        f = lambda a,b,c: a*b*c
+        print(f(10,5,2))
+38) filter(-,-): 1st arg is a function which returns bool
+                 2nd arg is iterator(list)
+                 returns iterator(list)
+    map(-,-):    1st arg is a function which returns object/not bool
+                 2nd arg is iterator(list)
+                 returns iterator(list)
+    reduce(-,-): is available in functools
+                 1st arg is a function which returns object/not bool
+                 2nd arg is iterator(list)
+                 returns object/int
+*) Decorator in python function: Can add extra feature to existing function.
+
+39) module in python:
+    module <-- variable, functions and classes...
+    when project grows have divide logically into modules.
+    -> create separate puthon file cal.py
+    -> define methods add(),sub(),mul()..... in cal.py
+    -> import cal.py into any python file and use the above methods.
+
+40, 41) special variable names in python.
+    __name__    ---> will print __main__ if we are executing the same module.
+                ---> will print module name if we import the module into some other module.
+
+42) Object oriented programming:
+    Python support functional, procedure and object oriented program.
+    procedure: functions, modules contains function.
+    functional: achieve certainn task by using functions.
+    Object oriented: everything in from of objects.
+
+    * Objects(instance of class), Classes(design/blueprint),Encapsulation, Abstraction, Polymorphism.
+
+43) Create class, object for it & call methods in it.
+
+    class Computer:
+        def config(self):
+            print("i5 16gb 1TB")
+
+     #Object
+     comp1 = Computer()
+
+     #method call
+     comp1.config()
+     Computer.config(comp1)
+
+44) __init__(self) is constructor in class.
+     we can pass arguments too
+    __init__(self):
+        <statements>
+
+45) Constructor, Self and comparing objects
+    size of object depends on number and type of variables.
+    ref ComputerDemo1.py
+
+46) Types of variables:
+    1) instance variables
+    2) static/class variables: class variable and static variables are same.
+47) Types of methods:
+    1) instance methods(self)
+        i)  Accessor Method: for reading instance variables(getters)
+                def get_rno(self):
+                    return self.rno
+
+        ii) Mutator Method: for updating instance variables(setters)
+                def set_rno(self,value):
+                    self.rno = value
+    2) class methods(cls), @classmthod
+        @classmethod
+        def getSchool(cls):
+            return cls.school
+
+    3) static methods(no self not cls), @staticmethod
+        @staticmethod
+        def info():
+            print("This is student class- static method, is nothing to do with class/instance variables.")
+48) inner class:
+
+    class Student:
+
+        class Laptop:
+            def __init__(self):
+                self.brand='HP'
+                self.ram='16gb'
+                self.cpu='i5'
+            def show(self):
+                print(self.brand,self.cpu,self.ram)
+
+        def __init__(self,name,roll):
+            self.name=name
+            self.roll=roll
+            self.lap=self.Laptop() # creating inner class object inside outer class
+
+        def show(self):
+            print(self.roll, self.name)
+            self.lap.show()
+
+s1 = Student('ravi',100)
+s2 = Student('kavi',200)
+
+s1.show()
+s2.show()
+
+# creating inner class object out side the outer class
+lap1 = Student.Laptop()
+lap1.brand='HHP'
+lap1.show()
+
+49) inheritance:
+    i)   single-level   A-->B(A)
+    ii)  multi-level    A-->B(A)-->C(B)
+    iii) multiple       A, B, C(A,B0
+
+50) constructor in inheritance & Method resolution order (MRO):
+    A is super class & B is sub class. i.e  A, B(A)
+    When we create object of B, It will execute __init__ of B, if that is not available it will extectur __init__ of A.
+    if you want to execute __init__ of A in __init__ of B. have to use super().__init__()
+
+    A,B independent classes & C is sub class of A and B. i.e  A, B, C(A,B)
+
+    super()__init__() in class C. ---> which super class __init__() will be executed ?
+    here, MRO come into picture (left to right). __init__() of A will be executed.
+    Same for Methods too.
+
+
+51) Polymorphism in Python:One thing in multiple forms.
+    1) Duck Typing
+    2) Operator Overloading
+    3) Method Overloading
+    4) Method Overriding
+    x = 5
+    x = 'ravi'
+    x = 5.5
+
+
+52) Duck Typing:
+53) Operator overloading
+    Operator are same +,-,/*..... but arguments/operands are different.
+    Ref int,str        __* methods
+                       __add__(self,other)
+                       __eql__(self,other)
+                       __mul__(self,other)
+                       __sub__(self,other)
+                       __gt__(,)
+                       __str__(,)
+54) Method overloading and Method overriding
+    two methods with same name but number of param are different.( Python down not support) we can achive this by some trick.
+
+55) Iterator fetches one value at a time.
+    iterator --- x = iter(obj)
+                 a = next(x)
+    Create your own iterator
+
+56) Generator ? It will give iterator. We use 'yield' keyword to generate iterator.
+    return will return value and terminates method.
+    yield will return value and not terminate method.
+
+    def topFive():
+        yield 1
+        yield 2
+        yield 3
+        yield 4
+        yield 5
+
+    vals = topFive()
+    print(next(vals)
+    print(next(vals)
+    print(next(vals)
+    print(next(vals)
+    print(next(vals)
+
+57) Errors:
+        Compile time Error - Syntactical Error. Ex: print(1+*8)
+        Logical Error - Code is working but giving wrong results. Ex: print('1+2 =', 1*2)
+        Runtime Error - user may give wrong inputs the errors. Ex: a=6, b=0, print(a/b) divisible by 0: ZeroDivisionError
+
+
+        try:
+            ..........
+        except Exception as e:
+            ..........
+        finally:
+            ..........
+58) Thread: is a light weight process
+    form threading import *
+    from time import *
+
+59) File Handling:
+        f = open('filename','mode')
+        for i in f:
+            .......
+
+    Comments in python
+        # only single line comments support in python
+
+        The following triple quotes is for documentation comments
+        """
+            ......
+            ......
+            ......
+        """
+    python is compiled and interpreter language.
+
+
+     Source code----Compiler---> Byte code----Interpreter----> Machine code
+
+     Byte code came into picture for portability.
+     Python Virtual Machine:
+     We have learned till now is cpython. it is the implementation.
+        PyPy
+        cpython   ---- implemented by using c language
+        jpython   ---- implemented by using java language
+        IRONpython---- implemented by using .net language
+
+60) Working with Database(MySql)
+    download and install mysql installer(it has workbench,installer , connector and setup)
+    Do configuration:
+        Default port: 3306
+        set pwd for root user : root
+        add user: ravi/EvaiKiO!
+        Do Default ruter configurations
+
+    Use workbench
+    -------------
+
+        show databases;
+        create database pydb;
+
+        use pydb;
+
+        create table py_student(
+	        rollno integer,
+            name varchar(20),
+            college varchar(20)
+        );
+
+        insert into py_student values (100,'ravi','VRSEC'),(200,'kiran','VRSEC');
+        select * from py_student;
+
+    Mysql connector installation:
+    ------------------------------
+    open cmd promptL:
+        >pip3 install mysql-connector
+        >where python
+        C:\Users\ravikiran.goru\AppData\Local\Programs\Python\Python37-32\python.exe
+
+        >where pip3
+        C:\Users\ravikiran.goru\AppData\Local\Programs\Python\Python37-32\Scripts\pip3.exe
+
+        >where pip
+        C:\Users\ravikiran.goru\AppData\Local\Programs\Python\Python37-32\Scripts\pip.exe
+61)
+
+
+
+
+
