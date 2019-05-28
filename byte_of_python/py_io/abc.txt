@@ -1,0 +1,1 @@
+This is text data in unicode format. it can be non-english chars
