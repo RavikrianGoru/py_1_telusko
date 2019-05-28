@@ -1,3 +1,13 @@
-https://docs.python.org/3/library/index.html
+Refer the above URL: https://docs.python.org/3/library/index.html
 
-Refer the above URL
+sys module:
+----------
+    The sys module contains system-specific functionality.
+    sys.argv list contains the command-line arguments.
+
+logging module:
+--------------
+    logging module provide functionality to store debug/log messages into file.
+
+
+
