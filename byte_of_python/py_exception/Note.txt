@@ -1,0 +1,48 @@
+Exception/Error: It occurs when unexpected situation occurs in program.
+---------------
+Ex:
+    1) Trying to read a file and file is not exist.
+    2) Python raises a syntax error. print(-) misspelled pint(-)
+       NameError: name 'pint' is not defined
+    3) EOFError
+
+Observe that a NameError is raised and also the location where the error was detected is printed.
+This is what an error handler for this error does.
+
+Handling Exception:
+------------------
+    We can handle try...except statements.
+
+We put all the statements that might raise exceptions/errors inside the try block and then
+put handlers for the appropriate errors/exceptions in the except clause/block.
+The except clause can handle a single specified error or exception, or a parenthesized list of
+errors/exceptions.
+If no names of errors or exceptions are supplied, it will handle all errors and exceptions.
+
+Note that there has to be at least one except clause associated with every try clause.
+Otherwise, what's the point of having a try block?
+
+If any error or exception is not handled, then the default Python handler is called which just
+stops the execution of the program and prints an error message.
+
+You can also have an else clause associated with a try..except block.
+The else clause is executed if no exception occurs.
+
+Raising Exceptions:
+------------------
+You can raise exceptions using the raise statement by providing the name of the error/exception and
+the exception object that is to be thrown.
+
+The error or exception that you can raise should be a class which directly or indirectly must
+be a derived class of the Exception class.
+
+
+The with statement:
+------------------
+* Acquiring a resource in the try block and subsequently releasing the resource in the finally block is a common pattern.
+Hence, there is also a with statement that enables this to be done in a clean manner:
+
+What happens behind the scenes is that there is a protocol used by the with statement.
+It fetches the object returned by the open statement, let's call it "thefile" in this case.
+It always calls the thefile.__enter__ function before starting the block of code under it and
+always calls thefile.__exit__ after finishing the block of code.
